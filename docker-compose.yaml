@@ -5,3 +5,4 @@ services:
     container_name: phphttpd
     ports:
       - "8087:80"
+ 

@@ -1,8 +1,8 @@
 <?php
 function pdo_connect_mysql() {
-    $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'root';
-    $DATABASE_PASS = '';
+    $DATABASE_HOST = 'database-1.cirbjkbrinz5.eu-north-1.rds.amazonaws.com';
+    $DATABASE_USER = 'admin';
+    $DATABASE_PASS = 'Admin1234';
     $DATABASE_NAME = 'phpcrud';
     try {
     	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);

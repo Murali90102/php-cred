@@ -1,9 +1,15 @@
 <?php
 function pdo_connect_mysql() {
-    $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'root';
-    $DATABASE_PASS = '';
-    $DATABASE_NAME = 'phpcrud';
+    // $DATABASE_HOST = 'localhost';
+    // $DATABASE_USER = 'root';
+    // $DATABASE_PASS = '';
+    // $DATABASE_NAME = 'phpcrud';
+
+	$DATABASE_HOST = getenv('DB_HOST');
+    $DATABASE_USER = getenv('DB_USER');
+    $DATABASE_PASS = getenv('DB_PASS');
+    $DATABASE_NAME = getenv('DB_NAME');
+	
     try {
     	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
     } catch (PDOException $exception) {

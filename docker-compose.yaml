@@ -5,4 +5,9 @@ services:
     container_name: phphttpd
     ports:
       - "8087:80"
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_NAME=phpcrud
  

@@ -1,0 +1,7 @@
+version: '3'
+services:
+  php:
+    image: phphttpd:2
+    container_name: phphttpd
+    ports:
+      - "8087:80"

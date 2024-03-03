@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: phonebook-container
-        image: murali90102/phonebook:06
+        image: murali90102/phonebook:9
         ports:
         - containerPort: 80
 ---

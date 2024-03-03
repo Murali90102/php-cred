@@ -1,13 +1,13 @@
 version: '3'
 services:
   php:
-    image: phphttpd:2
-    container_name: phphttpd
+    image: phonebook:1
+    container_name: phonebook
     ports:
       - "8087:80"
     environment:
       - DB_HOST=${DB_HOST}
       - DB_USER=${DB_USER}
       - DB_PASS=${DB_PASS}
-      - DB_NAME=phpcrud
+      - DB_NAME=${DB_NAME}
  
